@@ -2,24 +2,21 @@
   box-sizing: border-box;
   }
 
+/* untuk transisi navigasi */
 html {
 scroll-behavior: smooth;
 }
 
+/* untuk desain dasar */
 body {
 margin: 0;
 font-family: Inter, sans-serif;
-background: #171717;
 background: linear-gradient(135deg, #111111 0%, #7F1D1D 50%, #171717 100%);
-color: #1F2937;
 line-height: 1.7;
 }
 
-/* =========================
-2. HEADER
-========================= */
+/* untuk header */
 header {
-background: #000000;
 background: linear-gradient(50deg, rgba(0, 0, 0, 1) 0%, rgba(166, 0, 0, 1) 100%);
 font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -29,7 +26,6 @@ padding: 10px 10px;
 }
 
 header h1 {
-margin: 0 0 10px;
 font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 800;
@@ -43,9 +39,7 @@ color: #FECACA;
     font-weight: 500;
 }
 
-/* =========================
-3. NAVIGASI
-========================= */
+/* untuk pengaturan navigasi */
 header nav {
     display: flex;
     justify-content: flex-end;
@@ -53,11 +47,11 @@ header nav {
 }
 
 header nav a {
-    position: relative;
     display: inline-block;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
 header nav a::after {
     content: "";
     position: absolute;
@@ -65,11 +59,11 @@ header nav a::after {
     bottom: -6px;
     width: 0;
     height: 2px;
-    background-color: #ff3333;
+    background-color: #ffda33;
     transition: width 0.3s ease;
 }
 
-header nav a:hover {
+header nav a:hover { 
     color: #ff3333;
     transform: translateY(-3px);
 }
@@ -99,9 +93,8 @@ header nav a {
     text-decoration: none;
     color: white;
 }
-/* =========================
-4. KONTEN UTAMA
-========================= */
+
+/* konten utama */
 main {
 max-width: 1000px;
 margin: 35px auto;
@@ -134,9 +127,7 @@ color: #2a0f0f;
 margin-top: 30px;
 }
 
-/* =========================
-5. FOTO PROFIL
-========================= */
+/* foto profil */
 #tentang img {
 width: 180px;
 max-width: 100%;
@@ -147,9 +138,7 @@ display: block;
 margin-bottom: 20px;
 }
 
-/* =========================
-6. RIWAYAT PENDIDIKAN
-========================= */
+/* riwayat pendidikan */
 ol,
 ul {
 padding-left: 25px;
@@ -182,9 +171,7 @@ tr:nth-child(even) {
 background-color: #fcf8f8;
 }
 
-/* =========================
-7. KEAHLIAN
-========================= */
+/* keahlian */
 dt {
 color: #000000;
 font-weight: bold;
@@ -193,24 +180,13 @@ font-size: 150%;
 }
 
 
-/* =========================
-8. TAUTAN
-========================= */
+
 a {
 transition: color 0.3s;
 }
 
-section a {
-color: #2563eb;
-}
 
-section a:hover {
-color: #1d4ed8;
-}
-
-/* =========================
-9. FORMULIR KONTAK
-========================= */
+/* formulir kontak */
 form {
 margin-top: 20px;
 }
@@ -264,9 +240,7 @@ button:hover {
 background-color: #d81d1d;
 }
 
-/* =========================
-10. FOOTER
-========================= */
+/* footer */
 footer {
 background-color: #100c4b;
 color: #f3f3f3;
