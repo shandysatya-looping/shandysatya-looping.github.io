@@ -20,12 +20,12 @@ line-height: 1.7;
 ========================= */
 header {
 background: #000000;
-background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(166, 0, 0, 1) 100%);
+background: linear-gradient(50deg, rgba(0, 0, 0, 1) 0%, rgba(166, 0, 0, 1) 100%);
 font-family: 'Poppins', sans-serif;
     font-weight: 700;
 color: #ffffff;
-text-align: center;
-padding: 35px 20px;
+text-align: left;
+padding: 10px 10px;
 }
 
 header h1 {
@@ -46,29 +46,59 @@ color: #FECACA;
 /* =========================
 3. NAVIGASI
 ========================= */
-nav {
-background-image: url("lb5.jpeg");;
-text-align: center;
-padding: 18px 10px;
-border-bottom: 1px solid #e2e8f0;
-position: sticky;
-top: 0;
-z-index: 10;
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
 }
 
-nav a {
-display: inline-block;
-color: #040338;
-text-decoration: none;
-font-weight: bold;
-margin: 5px 10px;
-transition: color 0.3s;
+header nav a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #ff3333;
+    transition: width 0.3s ease;
 }
 
-nav a:hover {
-color: #0055ff;
+header nav a:hover {
+    color: #ff3333;
+    transform: translateY(-3px);
 }
 
+header nav a:hover::after {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    padding: 0 18px;
+    border-right: 1px solid #ffffff;
+}
+
+header nav li:last-child {
+    border-right: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
 /* =========================
 4. KONTEN UTAMA
 ========================= */
@@ -159,11 +189,9 @@ dt {
 color: #000000;
 font-weight: bold;
 margin-top: 15px;
+font-size: 150%;
 }
 
-dd {
-margin-left: 20px;
-}
 
 /* =========================
 8. TAUTAN
@@ -406,4 +434,106 @@ section textarea:focus,
 section select:focus {
     outline: 2px solid #B91C1C;
     border-color: #B91C1C;
+}
+
+
+.kontak {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.kontak a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.kontak img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Animasi saat kursor diarahkan ke ikon */
+.kontak a:hover {
+    transform: translateY(-6px) scale(1.12);
+    filter: drop-shadow(0 0 8px #ff3333);
+}
+
+/* Efek saat ikon diklik */
+.kontak a:active {
+    transform: scale(0.92);
+}
+
+
+.network {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.network a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.network img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Animasi saat kursor diarahkan ke ikon */
+.network a:hover {
+    transform: translateY(-6px) scale(1.12);
+    filter: drop-shadow(0 0 8px #ff3333);
+}
+
+/* Efek saat ikon diklik */
+.network a:active {
+    transform: scale(0.92);
+}
+
+
+.english {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.english a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.english img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Animasi saat kursor diarahkan ke ikon */
+.english a:hover {
+    transform: translateY(-6px) scale(1.12);
+    filter: drop-shadow(0 0 8px #ff3333);
+}
+
+/* Efek saat ikon diklik */
+.english a:active {
+    transform: scale(0.92);
 }
