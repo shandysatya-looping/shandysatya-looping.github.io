@@ -1,0 +1,409 @@
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: Inter, sans-serif;
+background: #171717;
+background: linear-gradient(135deg, #111111 0%, #7F1D1D 50%, #171717 100%);
+color: #1F2937;
+line-height: 1.7;
+}
+
+/* =========================
+2. HEADER
+========================= */
+header {
+background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(166, 0, 0, 1) 100%);
+font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+color: #ffffff;
+text-align: center;
+padding: 35px 20px;
+}
+
+header h1 {
+margin: 0 0 10px;
+font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+header p {
+color: #FECACA;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* =========================
+3. NAVIGASI
+========================= */
+nav {
+background-image: url("lb5.jpeg");;
+text-align: center;
+padding: 18px 10px;
+border-bottom: 1px solid #e2e8f0;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+
+nav a {
+display: inline-block;
+color: #040338;
+text-decoration: none;
+font-weight: bold;
+margin: 5px 10px;
+transition: color 0.3s;
+}
+
+nav a:hover {
+color: #0055ff;
+}
+
+/* =========================
+4. KONTEN UTAMA
+========================= */
+main {
+max-width: 1000px;
+margin: 35px auto;
+padding: 0 20px;
+}
+
+section {
+background-image: url("lb3.jpeg");;
+padding: 30px;
+margin-bottom: 25px;
+border-radius: 14px;
+border: 1px solid #e2e8f0;
+box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+scroll-margin-top: 90px;
+}
+
+section h2 {
+font-family: 'Montserrat';
+color: #2a0f0f;
+font-size: 25px;
+margin-top: 0;
+margin-bottom: 22px;
+padding-bottom: 10px;
+border-bottom: 3px solid #eb2525;
+}
+
+section h3 {
+font-family:'Verdana, Geneva, Tahoma, sans-serif';
+color: #2a0f0f;
+margin-top: 30px;
+}
+
+/* =========================
+5. FOTO PROFIL
+========================= */
+#tentang img {
+width: 180px;
+max-width: 100%;
+height: auto;
+border-radius: 12px;
+border: 4px solid #dbeafe;
+display: block;
+margin-bottom: 20px;
+}
+
+/* =========================
+6. RIWAYAT PENDIDIKAN
+========================= */
+ol,
+ul {
+padding-left: 25px;
+}
+
+li {
+margin-bottom: 8px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+background-color: white;
+}
+
+th,
+td {
+border: 1px solid #cbd5e1;
+padding: 12px;
+text-align: left;
+}
+
+th {
+background-color: #af1e1e;
+color: white;
+}
+
+tr:nth-child(even) {
+background-color: #fcf8f8;
+}
+
+/* =========================
+7. KEAHLIAN
+========================= */
+dt {
+color: #000000;
+font-weight: bold;
+margin-top: 15px;
+}
+
+dd {
+margin-left: 20px;
+}
+
+/* =========================
+8. TAUTAN
+========================= */
+a {
+transition: color 0.3s;
+}
+
+section a {
+color: #2563eb;
+}
+
+section a:hover {
+color: #1d4ed8;
+}
+
+/* =========================
+9. FORMULIR KONTAK
+========================= */
+form {
+margin-top: 20px;
+}
+
+label {
+display: inline-block;
+font-weight: bold;
+margin-bottom: 6px;
+color: #553333;
+}
+
+input,
+select,
+textarea {
+width: 100%;
+padding: 12px;
+font-family: inherit;
+font-size: 15px;
+color: #553333;
+background-color: #ffffff;
+border: 1px solid #e1cbcb;
+border-radius: 8px;
+margin-bottom: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+outline: none;
+border-color: #ff2929;
+box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+resize: vertical;
+}
+
+button {
+background-color: #e72020;
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 8px;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #d81d1d;
+}
+
+/* =========================
+10. FOOTER
+========================= */
+footer {
+background-color: #100c4b;
+color: #f3f3f3;
+text-align: center;
+padding: 25px 15px;
+margin-top: 40px;
+}
+
+footer p {
+margin: 5px;
+}
+
+footer a {
+color: #fd9393;
+text-decoration: none;
+}
+
+footer a:hover {
+color: white;
+text-decoration: underline;
+}
+
+/* =========================
+11. RESPONSIVE / HP
+========================= */
+@media (max-width: 600px) {
+header {
+padding: 40px 15px;
+}
+
+
+header h1 {
+    font-size: 27px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+nav {
+    position: static;
+}
+
+nav a {
+    margin: 5px;
+    font-size: 14px;
+}
+
+main {
+    margin: 20px auto;
+    padding: 0 12px;
+}
+
+section {
+    padding: 20px 16px;
+}
+
+section h2 {
+    font-size: 22px;
+}
+
+table {
+    font-size: 13px;
+}
+
+th,
+td {
+    padding: 8px;
+    overflow-wrap: anywhere;
+}
+
+
+}
+
+
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profil img {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.profil p {
+    flex: 1;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* mengubah tulisan */
+/* tabel riwayat pendidikan */
+section  th{
+    background: #7F1D1D;
+    color: #FFFFFF;
+    padding: 14px;
+    text-align: center;
+}
+section ol,
+section li {
+    font-family: 'Times New Roman';
+}
+
+section td {
+    padding: 14px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+section tr {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+    background: #FAF5F5;
+}
+
+/* Daftar keahlian */
+section dl {
+    font-family: 'Cambria';
+}
+section ul,
+section ol {
+    padding-left: 24px;
+    line-height: 1.9;
+}
+
+section li::marker {
+    color: #B91C1C;
+}
+section ul {
+    font-family:'Cambria';
+}
+
+
+/* Informasi kontak */
+section a {
+    color: #2114d6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section a:hover {
+    color: #DC2626;
+    text-decoration: underline;
+}
+
+/* Form kontak jika ada */
+section input,
+section textarea,
+section select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font: inherit;
+}
+
+section input:focus,
+section textarea:focus,
+section select:focus {
+    outline: 2px solid #B91C1C;
+    border-color: #B91C1C;
+}
